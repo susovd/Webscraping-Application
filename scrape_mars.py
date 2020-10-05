@@ -45,8 +45,9 @@ def scrape():
     #create a beautiful soup object, parse with html parser
     soup = bs(browser.html, "html.parser")
     relative_image_url = soup.select_one("figure.lede a img").get("src")
-    featured_image = f"htpps://www.jpl.nasa.gov{relative_image_url}"
+    featured_image = f"https://www.jpl.nasa.gov{relative_image_url}"
     web_scrape_data["featured_image_url"] = featured_image
+    
 
     #Mars facts
     url = "https://space-facts.com/mars/"
@@ -90,3 +91,7 @@ def scrape():
 
     return web_scrape_data
 
+# if running from command line, show the scraped data results
+if __name__ == "__main__":
+    result = scrape()
+    print(result)

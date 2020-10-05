@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Scraping Homework Mission to Mars</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div clas="container">
+        <div class="row">
+            <div class="jumbotron text-center">
+            <h1>Webscrapping: Mission to Mars</h1>
+            <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape Current Data</a></p>
+            </div>
+        </div>
+      
+    <!-- Mars News -->
+    <div class="row text-center">
+        <div class="col-md-12" >
+            <h3><strong>Latest News about Mars</strong></h3>
+              <h4>{{mars.news_title}}</h4>
+                  <p>{{mars.news_paragraph}}</p>
+        </div>
+    </div>
+    
+    <!-- Featured Image -->  
+    <div class ="row" >
+        <div class = "col-md-8 clearfix text-center">
+            <h3><strong>Featured Mars Image</strong></h3>
+            <img src = "{{mars.featured_image_url}}" alt ="Mars Image" style="max-height: 80vh;">
+            <br>
+            <br>
+            <br>
+        </div>
+
+        <!-- Mars Facts -->
+        <div class = "col-md-4 center-block">
+                <h3><strong>Mars Facts </strong> </h3>
+                <p>{{mars.Mars_facts | safe}}</p>
+                <br>
+                <br>
+                <br>
+        </div>
+    </div>  
+
+    <!-- Mars Hemispheres --> 
+    <div class ="row text-center">
+        <div class = "col-md-12" >
+            <h3><strong>Mars Hemispheres</strong></h3>
+            <br>
+            {% for mars_hemisphere in mars.Mars_hemispheres %}
+                <div class = "col-md-6">
+                    <img src = "{{mars_hemisphere.url}}" class="img-responsive">
+                        <h4><strong>{{mars_hemisphere.title}}</strong></h4>
+                    
+                </div>
+            {% endfor %}
+
+        </div>
+    </div>
+  </div>
+
+</body>
+</html>
