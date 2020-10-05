@@ -28,7 +28,7 @@ def scrape():
 
     #store news title and description in a dictionary
     web_scrape_data = {"news_title": news_title,
-                 "news_p": news_p}
+                       "news_p": news_p}
 
     #JPL Mars Space Images - Featured Image
     url = "https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars"
