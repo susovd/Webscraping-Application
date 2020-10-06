@@ -67,8 +67,8 @@ A template HTML file called `index.html` was created to take the mars data dicti
 
 ### Built With
 * [Python](https://www.python.org/about/)
-  * MongoDB (https://docs.mongodb.com/)
-  * [pandas](https://pandas.pydata.org/pandas-docs/stable/getting_started/index.html)
+  * [MongoDB](https://docs.mongodb.com/)
+  * [Pandas](https://pandas.pydata.org/pandas-docs/stable/getting_started/index.html)
   * [Flask](https://flask-doc.readthedocs.io/en/latest/)
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 
