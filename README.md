@@ -1,12 +1,8 @@
 <!---Project Logo -->
 <br />
-<p align="center">
-  <a href=>
-    <img src="screenshots/fig1.png" alt="Logo" width="200" height="200">
-  </a>
 
+<p align="center">
   <h3 align="center">Webscrapping: Mission to Mars</h3>
-  
 </p>
 
 
