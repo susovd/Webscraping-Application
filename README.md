@@ -1,5 +1,3 @@
-# noPreferenceInCamelCase
-
 <!---Project Logo -->
 <br />
 <p align="center">
