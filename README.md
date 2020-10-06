@@ -160,7 +160,7 @@ _HTML Image Maps_ Retrieved from: [https://www.w3schools.com/htmL/html_images_im
 
 # Web Scraping Homework - Mission to Mars
 
-![mission_to_mars](Images/mission_to_mars.png)
+
 
 In this assignment, you will build a web application that scrapes various websites for data related to the Mission to Mars and displays the information in a single HTML page. The following outlines what you need to do.
 
