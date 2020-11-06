@@ -6,7 +6,6 @@
   <img src="screenshots/fig1.png" alt="Logo">
 </p>
 
-
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
@@ -22,7 +21,7 @@ In this project, I built a web application that scrapes various websites for dat
 ## Step 1 - Scraping
 
 I completed initial scraping using Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter.
-I created a Jupyter Notebook file called `mission_to_mars.ipynb` and used this to complete all of scraping and analysis tasks. Following information were scraped.
+I created a Jupyter notebook file called `mission_to_mars.ipynb` and used this to complete all of scraping and analysis tasks. Following information were scraped.
 
 ### NASA Mars News
 
@@ -30,7 +29,7 @@ I scraped the [NASA Mars News Site](https://mars.nasa.gov/news/) and collected t
 
 ### JPL Mars Space Images - Featured Image
 
-* Then I visited the url for JPL Featured Space Image [here](https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars) and used splinter to navigate the site and find the image url for the current Featured Mars Image and assign the url string to a variable called `featured_image_url`. A complete url string was saved. 
+Then I visited the url for JPL Featured Space Image [here](https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars) and used splinter to navigate the site and find the image url for the current Featured Mars Image and assign the url string to a variable called `featured_image_url`. A complete url string was saved. 
 
 ### Mars Facts
 
